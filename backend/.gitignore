@@ -13,3 +13,4 @@ env/
 
 # Ignore unnecessary logs
 *.log
+.env

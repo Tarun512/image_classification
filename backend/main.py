@@ -8,8 +8,18 @@ import uvicorn
 import os
 import gdown
 
+from dotenv import load_dotenv
+
+# ✅ Load environment variables from .env
+load_dotenv()
+
+# ✅ Get Google Drive File ID from environment variables
+FILE_ID = os.getenv("GDRIVE_FILE_ID")
+
+if not FILE_ID:
+    raise ValueError("FILE_ID is not set. Check your .env file.")
 # ✅ Google Drive Model File ID (Replace with your actual ID)
-FILE_ID = "12pxMiOcyptouUhZZWbPBccuEyz-hhT3g"
+
 MODEL_PATH = "dogs_vs_cats_model.keras"
 
 # ✅ Construct Correct Google Drive URL
