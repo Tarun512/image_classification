@@ -1,0 +1,15 @@
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore model files (too large for GitHub)
+*.h5
+*.keras
+
+# Ignore unnecessary logs
+*.log
